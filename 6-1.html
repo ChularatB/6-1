@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <script>
+        function Process() {
+            var a = parseInt(document.getElementById("A").value);
+            var b = parseInt(document.getElementById("B").value);
+            var c = a+b;
+            document.getElementById("C").value= c;
+        }
+
+        window.onload = function () {
+            var ss = document.getElementById("Go");
+            ss.onclick = Process;
+        }
+    </script>
+
+</head>
+
+<body>
+    <form>
+        <input type="text" id="A"><label> +</label>
+        <input type="text" id="B"><label> =</label>
+        <input type="text" id="C">
+        <input type="button" id="Go" value="Go Go">
+    </form>
+</body>
+
+</html>
